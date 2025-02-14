@@ -1,137 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Happy Valentine :)</title>
-    <link
-      rel="stylesheet"
-    />
-    <link rel="shortcut icon" type="image/png" href="./img/heart.svg" />
-    <link rel="stylesheet" href="style/style.css" />
-  </head>
-
-  <body>
-    <div class="container">
-      <div class="one">
-        <h1 class="one">
-          Hey
-          <span id="name">xyz</span>
-        </h1>
-        <p class="two" id="greetingText">I really like your name btw!</p>
-      </div>
-      <div class="three">
-        <p>It's Valentine!!! :D</p>
-      </div>
-      <div class="four">
-        <div class="text-box">
-          <p class="hbd-chatbox">
-            Happy Valentine's Day!! Yeee! Love and blah blah...
-          </p>
-          <p class="fake-btn">Send</p>
-        </div>
-      </div>
-      <div class="five">
-        <p class="idea-1">That's what I was going to do.</p>
-        <p class="idea-2">But then I stopped.</p>
-        <p class="idea-3">
-          I realised, I wanted to do something <strong>special</strong>.
-        </p>
-        <p class="idea-4">Because,</p>
-        <p class="idea-5">
-          You are Special
-          <span>:)</span>
-        </p>
-        <p class="idea-6">
-          <span>S</span>
-          <span>O</span>
-        </p>
-      </div>
-      <div class="six">
-        <img src="img/vector.jpg" alt="" class = "girl-dp" id="imagePath" />
-        <div class="wish">
-          <h3 class="wish-hbd">Happy Valentine's Day Gorgeous</h3>
-          <h5 id="wishText">kuch kuch</h5>
-        </div>
-      </div>
-      <div class="seven">
-        <div class="baloons">
-          <img src="img/balloon.svg" alt="" />
-          <!-- <img src="img/music-note.svg" alt="" /> -->
-          <img src="img/smiling.svg" />
-          <img src="img/heart.svg" />
-          <!-- <img src="img/happy.svg" alt="" /> -->
-          <img src="img/balloon.svg" alt="" />
-          <!-- <img src="img/music-note.svg" alt="" /> -->
-          <!-- <img src="img/smiling.svg" /> -->
-          <img src="img/heart.svg" />
-          <img src="img/balloon.svg" alt="" />
-          <img src="img/music-note.svg" alt="" />
-          <img src="img/heart.svg" />
-          <img src="img/balloon.svg" alt="" />
-          <!-- <img src="img/music-note.svg" alt="" /> -->
-          <!-- <img src="img/smiling.svg" /> -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            height: 100vh;
+            background-color: #ce2032;
+          }
           
-          <img src="img/heart.svg" />
-          <img src="img/balloon.svg" alt="" />
-          <img src="img/heart.svg" />
-          <img src="img/heart.svg" />
-          <img src="img/music-note.svg" alt="" />
-          <img src="img/smiling.svg" />
-         
-          <img src="img/happy.svg" alt="" />
-          <img src="img/balloon.svg" alt="" />
-          <img src="img/heart.svg" />
-          <!-- <img src="img/music-note.svg" alt="" /> -->
-          <!-- <img src="img/heart.svg" />
+          .container {
+            position: relative;
+            margin-top: 200px;
+          }
+          .valentines {
+            position: relative;
+            top:50px;
+            cursor: pointer;
+            animation: up 3s linear infinite;
+          }
           
-          <img src="img/happy.svg" alt="" />
-          <img src="img/balloon.svg" alt="" />
-          <img src="img/music-note.svg" alt="" /> -->
-          <img src="img/smiling.svg" />
-          <!-- <img src="img/heart.svg" /> -->
-          <!-- <img src="img/happy.svg" alt="" /> -->
+          .envelope {
+            position: relative;
+            width: 300px;
+            height:200px;
+            background-color: #ffffff;
+            border: 2px solid #ac32f8;
+            border-radius: 5px;
+        }
+        .envelope:before {
+          background-color: #ffffff;
+          content:"";
+          position: absolute;
+          width: 212px;
+          height: 212px;
+          transform: rotate(45deg);
+          top:-105px;
+          left:44px;
+          border-radius:30px 0 0 0;
+        }
+        .card {
+          position:relative;
+          background-color: #ecbae6;
+          width: 270px;
+          height: 170px;
+          bottom: 190px;
+          left:15px;
+          border-top-left-radius: 20px;
+          border-top-right-radius: 20px;
+          box-shadow: -5px -5px 100px rgba(0,0,0,0.4); 
+          animation: cd 3s linear infinite;  
+        }
+        @keyframes cd {
+            0% {
+              transform: translateY(0);
+            }
+            100% {
+              transform: translateY(-100px);
+            }
+          }
+          .card:before {
+            content:"";
+            position: absolute;
+            border:3px solid #a504f6;
+            border-style: dotted;
+            width: 240px;
+            heighT: 140px;
+            left:12px;
+            top:12px;
+            bottom: 0px;
+          }
+          .text {
+            position: absolute;
+            font-family: 'Brush Script MT', cursive;
+            
+            font-size: 25px;
+            text-align: center;
+            line-height:25px;
+            top:19px;
+            left:30px;
+            color: #003049;
+          }
+          
+          .texts {
+            position: absolute;
+            font-family: 'Brush Script MT', cursive;
+            font-size: 27px;
+            text-align: center;
+            line-height:25px;
+            top:70px;
+            left:70px;
+            color: #e11111;
+          }
+          .heart {
+            background-color: #d62828;
+            display: inline-block;
+            height: 30px;
+            margin: 0 10px;
+            position: relative;
+            top: 110px;
+            left:105px;
+            transform: rotate(-45deg);
+            width: 30px;
+          }
+          .heart:before,
+          .heart:after {
+            content: "";
+            background-color: #d62828;
+            border-radius: 50%;
+            height: 30px;
+            position: absolute;
+            width: 30px;
+          }
+          
+          .heart:before {
+            top: -15px;
+            left: 0;
+          }
+          .heart:after {
+            left: 15px;
+            top: 0;
+          }
+          .front {
+            position: absolute;
+            border-right: 180px solid #ffffff;
+            border-top: 95px solid transparent;
+            border-bottom: 100px solid transparent;
+            left:120px;
+            top:5px;
+            width:0;
+            height:0;
+            z-index:10;
+          }
+          .front:before {
+            position: absolute;
+            content:"";
+            border-left: 300px solid #ececec;
+            border-top: 195px solid transparent;
+            left:-120px;
+            top:-95px;
+            width:0;
+            height:0;
+          }
+          
+          .shadow {
+            position: absolute;
+            width: 330px;
+            height: 25px;
+            border-radius:50%;
+            background-color: rgba(0,0,0,0.3);
+            top:265px;
+            left:-15px;
+            animation: scale 3s linear infinite;
+            z-index:-1;
+          }
+          
+          @keyframes up {
+            0%, 100% {
+              transform: translateY(0);
+            }
+            50% {
+              transform: translateY(-30px);
+            }
+          }
+          
+          @keyframes scale {
+            0%, 100% {
+              transform: scaleX(1);
+            }
+            50% {
+              transform: scaleX(0.85);
+            }
+          }
+          
+          .hearts {
+            position: absolute  
+          }
+          .one, .two, .three, .four, .five {
+            background-color: red;
+            display: inline-block;
+            height: 10px;
+            margin: 0 10px;
+            position: relative;  transform: rotate(-45deg);
+            width: 10px;
+            top:50px;
+          }
+          
+          .one:before,
+          .one:after, .two:before, .two:after, .three:before, .three:after, .four:before, .four:after, 
+          .five:before, .five:after {
+            content: "";
+            background-color: red;
+            border-radius: 50%;
+            height: 10px;
+            position: absolute;
+            width: 10px;
+          }
+          
+          .one:before, .two:before, .three:before, .four:before, .five:before {
+            top: -5px;
+            left: 0;
+          }
+          .one:after, .two:after, .three:after, .four:after, .five:after {
+            left: 5px;
+            top: 0;
+          }
+          
+          .one {
+            left:10px;
+            animation: heart 1s ease-out infinite; 
+          }
+          .two {
+            left:30px;
+            animation: heart 2s ease-out infinite; 
+          }
+          .three {
+            left:50px;
+            animation: heart 1.5s ease-out infinite;
+          }
+          .four {
+            left:70px;
+            animation: heart 2.3s ease-out infinite;
+          }
+          .five {
+            left:90px;
+            animation: heart 1.8s ease-out infinite;
+          }
+          @keyframes heart {
+            0%{
+              transform: translateY(0) rotate(-45deg) scale(0.3);
+              opacity: 1;
+            }
+            100%{
+              transform: translateY(-150px) rotate(-45deg) scale(1.3);
+              opacity: 0.5;
+            }
+          }
+                              
+    </style>
+    
+    <div class="container" id="card">
+        <div class="valentines">
+         <div class="envelope"></div>
+          <div class="front"></div>
+        <div class="card">
+         <div class="text">Katherine</br>Feliz San Valentin!</div>
+         <div class="texts">Te quiero</div>
+         <div class="heart"</div>
         </div>
-      </div>
-      <div class="eight">
-        <svg viewBox="0 0 40 40" xmlnssvg/heart.svg.org/2000/svg">
-        <circle cx="20" cy="20" r="20" />
-      </svg>
-        <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="20" cy="20" r="20" />
-        </svg>
-        <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="20" cy="20" r="20" />
-        </svg>
-        <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="20" cy="20" r="20" />
-        </svg>
-        <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="20" cy="20" r="20" />
-        </svg>
-        <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="20" cy="20" r="20" />
-        </svg>
-        <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="20" cy="20" r="20" />
-        </svg>
-        <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="20" cy="20" r="20" />
-        </svg>
-        <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="20" cy="20" r="20" />
-        </svg>
-      </div>
-      <div class="nine">
-        <p>Okay, now come back and tell me if you liked it.</p>
-        <p id="replay">Or click, if you want to watch it again.</p>
-        <p class="last-smile">:)</p>
-      </div>
+       
+        <div class="hearts">
+         <div class="one"></div>
+         <div class="two"></div>
+         <div class="three"></div>
+         <div class="four"></div>
+         <div class="five"></div>
+         </div>
+        </div>
     </div>
-  </body>
-
-  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
-  <script type="text/babel" src="script/main.js"></script>
+    
+      <div class="shadow"></div>
+      </div>
+     </div>
+     <script>
+      document.getElementById("card").addEventListener("click", function() {
+        window.location.href = "message.html";
+      });
+     </script>
+    <body/>
+    
+       
+</body>
 </html>

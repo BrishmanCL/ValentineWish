@@ -3,6 +3,8 @@ html {
 }
 
 body {
+  background-image: url("https://img.freepik.com/vector-premium/elegante-fondo-blanco-fluido-abstracto_502060-62.jpg?w=1380");
+  background-size: cover;
   margin: 0;
   font-family: "Work Sans", sans-serif;
 }
@@ -277,7 +279,7 @@ body {
   }
 
   .idea-6 span {
-    font-size: 10rem;
+    font-size: 6rem;
   }
 
   .six .hat {
